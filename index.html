@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/style.css"/>
+    <script type="text/javascript" src="./src/script/script.js"></script>
+    <title>Horóscopo</title>
+</head>
+
+<body>
+    
+    <div class="container"><!--div do conteúdo-->
+        <div class="bg"></div><!--div imagem dos signos-->
+    <div class="content-box"> <!--retangulo central-->
+        <div class="title">Descubra seu Signo!</div>
+
+        <div class="label">Dia do seu Aniversário</div> <!--titulo do campo dia-->
+            <div input><input type="number" id="day" min="1" max="31"/></div> <!--campo dia-->
+        <div class="label">Mês do seu Aniversário</div> <!--titulo do campo mês-->
+            <div input><input type="number" id="month" min="1" max="12"/></div> <!--caompo mês-->
+        <button onclick="horoscope()" >DESCUBRA AGORA</button><!--botão da função-->
+        <div class="c">Seu Signo é:</div>
+
+        <a target="_blank" id="link" >
+        <div id="result"></div><!--resultado/signo-->
+        <img src="" class="razer" id="imageoption">
+        </a>
+    </div>
+     
+
+
+</body>
+</html>
